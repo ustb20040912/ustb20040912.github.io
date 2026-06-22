@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matile's Home</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --green: #3fb950;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container { max-width: 720px; width: 100%; }
+        header { text-align: center; margin-bottom: 3rem; }
+        .avatar {
+            width: 100px; height: 100px; border-radius: 50%;
+            border: 3px solid var(--border); margin-bottom: 1rem;
+        }
+        h1 { font-size: 1.8rem; color: #f0f6fc; }
+        .subtitle { color: #8b949e; margin-top: 0.5rem; }
+        .card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;
+        }
+        .card h2 {
+            font-size: 1.1rem; color: var(--accent);
+            margin-bottom: 1rem; padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .links a {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; border: 1px solid var(--border);
+            border-radius: 6px; text-decoration: none;
+            color: var(--text); font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .links a:hover { border-color: var(--accent); background: rgba(88,166,255,0.1); }
+        .status { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 0.25rem; }
+        footer {
+            text-align: center; color: #484f58; font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="avatar" src="https://avatars.githubusercontent.com/u/203997776?v=4" alt="avatar">
+            <h1>Matile</h1>
+            <p class="subtitle">研究生 · AI 探索者 · 材料科学</p>
+        </header>
+
+        <div class="card">
+            <h2>📌 关于我</h2>
+            <p>武汉纺织大学研究生，研究方向光热转换 / 辐射制冷 / 智能热管理。热爱编程与 AI 技术，正在学习 Python 和 COMSOL 仿真。</p>
+        </div>
+
+        <div class="card">
+            <h2>🔗 链接</h2>
+            <div class="links">
+                <a href="https://github.com/ustb20040912" target="_blank">🐙 GitHub</a>
+                <a href="mailto:zyl13028684827@gmail.com">📧 Email</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🟢 状态</h2>
+            <p><span class="status"></span> 在线 · 持续学习与建设中</p>
+        </div>
+
+        <footer>
+            <p>Powered by GitHub Pages · ustb20040912.github.io</p>
+        </footer>
+    </div>
+</body>
+</html>
